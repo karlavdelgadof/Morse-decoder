@@ -28,11 +28,15 @@ To get a local copy up and running follow these simple steps.:arrow_down:
 - A code editor like Visual Studio Code with Git and Ruby.
 - You can check if Git is installed by running the following command in the terminal: 
 
-$ git --version
+```
+git --version
+```
 
 Likewise for Ruby installation.
 
-$ ruby --version && irb
+``` 
+ruby --version && irb
+``` 
 
 ### Setup
 
