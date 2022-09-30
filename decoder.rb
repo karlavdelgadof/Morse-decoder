@@ -52,5 +52,14 @@ def decode_word(string)
   word
 end
 
-puts decode_char('.-')
-puts decode_word('-- -.--')
+# Method to decode a full sentence
+def decode(sentence)
+  message = []
+  sentence.split.each do |word|
+    words_in = message.push(decode_word(word))
+    @joined_msg = words_in.join(' ')
+  end
+  @joined_msg
+end
+
+puts decode('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...')
